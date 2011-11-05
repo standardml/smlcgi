@@ -1,0 +1,6 @@
+<% val _ = startResponse "text/html" %>
+<h1>Foobar</h1>
+<p><% val a = 123
+val _ = print "foobar" %></p>
+<p>This is pretty godamned <%% "special" %></p>
+

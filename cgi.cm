@@ -1,0 +1,4 @@
+Group is
+	cgi.sml
+	$SMACKAGE/cmlib/v1/basis.cm
+	$SMACKAGE/cmlib/v1/cmlib.cm
