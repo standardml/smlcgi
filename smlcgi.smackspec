@@ -1,0 +1,4 @@
+provides: smlcgi v0.0.1
+maintainer: Gian Perrone <gdpe at itu dot dk>
+requires: cmlib v1
+keywords: CGI, web, template compiler
