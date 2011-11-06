@@ -34,15 +34,17 @@ The `CGI` structure is open by default in templates.
 
 A minimal template might be:
 
-    <% val _ = startResponse "text/html" %>
-    Hello, <%% "world!" %>
+    <h1><%% title %></h1>
+    Hello, <%% content %>
 
-A template `hello.mlt` is compiled to two files: `hello.cgi.sml` and `hello.cgi.mlb`, and finally to a CGI-ready binary with the two commands:
+A template `hello.mlt` is compiled to two files: `hello.cgi.sml` and `hello.cgi.mlb` with the command:
 
     smlcgic hello.mlt
-    mlton hello.cgi.mlb
 
-If `hello.cgi` is placed in an appropriate CGI-enabled directory, then it should be accessible via the web.
+One might build a full application by having an additional file that invokes the template:
+
+    val _ = CGI.startResponse "text/html"
+    val _ = Template.render ("Some Title", "world!")
 
 Query strings
 =============

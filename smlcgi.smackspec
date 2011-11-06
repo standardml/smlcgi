@@ -1,4 +1,5 @@
-provides: smlcgi v0.0.1
+provides: smlcgi v0.0.3
 maintainer: Gian Perrone <gdpe at itu dot dk>
 requires: cmlib v1
 keywords: CGI, web, template compiler
+license: BSD3
